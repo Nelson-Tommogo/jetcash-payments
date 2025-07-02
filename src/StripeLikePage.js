@@ -193,7 +193,7 @@ export default function StripeLikePage() {
   return (
     <div className="stripe-container">
       <div className="stripe-header">
-        <h1>JetCash Payments</h1>
+        <h1>Aviator Predictor app</h1>
       </div>
       
       <div className="stripe-content">
@@ -323,7 +323,7 @@ export default function StripeLikePage() {
                 className={`payment-method-section stripe-global-section ${activePaymentMethod === 'stripe' ? 'active' : ''}`}
                 onClick={() => handlePaymentMethodChange('stripe')}
               >
-                <h3 className="section-title">JetCash Payments</h3>
+                <h3 className="section-title">Aviator Predictor app</h3>
                 <p className="stripe-description">Pay with Stripe (credit cards, bank transfers, etc.)</p>
               </div>
               
