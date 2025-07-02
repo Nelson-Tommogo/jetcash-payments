@@ -1,0 +1,28 @@
+.stripe-footer {
+  background-color: #f5f5f5;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-content span {
+  color: #222;
+}
+
+.footer-content span:first-child {
+  cursor: pointer;
+}
+
+.footer-content span:first-child:hover {
+  text-decoration: underline;
+}
+
+.footer-text {
+  margin-left: 8px;
+  cursor: default;
+}
+
+.footer-content strong {
+  font-size: 16px; /* slightly bigger */
+  font-weight: bold;
+}

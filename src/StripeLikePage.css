@@ -1,0 +1,393 @@
+/* Base Styles */
+.stripe-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.stripe-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.stripe-header h1 {
+  font-size: 24px;
+  color: #32325d;
+  margin-bottom: 5px;
+}
+
+.payment-amount {
+  font-size: 32px;
+  font-weight: bold;
+  color: #32325d;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #6b7c93;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e0e6ed;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+.form-group input:focus {
+  border-color: #6772e5;
+  box-shadow: 0 0 0 1px #6772e5;
+  outline: none;
+}
+
+.hint {
+  color: #8898aa;
+  font-size: 12px;
+  margin-top: 5px;
+  display: block;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-row .half {
+  flex: 1;
+}
+
+/* Payment Method Buttons */
+.payment-method-button {
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid #e0e6ed;
+  text-align: center;
+}
+
+.payment-method-button:hover {
+  border-color: #6772e5;
+}
+
+.payment-method-button.active {
+  border-color: #6772e5;
+  background-color: #f6f9fc;
+}
+
+.apple-pay-button {
+  background-color: #000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.apple-pay-logo {
+  height: 24px;
+}
+
+/* Payment Method Sections */
+.payment-method-section {
+  border: 1px solid #e0e6ed;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.payment-method-section:hover {
+  border-color: #6772e5;
+}
+
+.payment-method-section.active {
+  border-color: #6772e5;
+  background-color: #f6f9fc;
+}
+
+.stripe-global-section {
+  background-color: #000;
+  color: white;
+  border-color: #635bff;
+}
+
+.stripe-global-section:hover {
+  background-color: #554dd8;
+  border-color: #554dd8;
+}
+
+.stripe-global-section.active {
+  background-color: #554dd8;
+  border-color: #554dd8;
+}
+
+.section-title {
+  font-size: 16px;
+  color: #32325d;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.stripe-global-section .section-title,
+.stripe-global-section .stripe-description {
+  color: white;
+}
+
+.stripe-description {
+  opacity: 0.9;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.payment-method-divider {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  color: #8898aa;
+  font-size: 14px;
+}
+
+.payment-method-divider::before,
+.payment-method-divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #e0e6ed;
+}
+
+.payment-method-divider span {
+  padding: 0 10px;
+}
+
+/* Card Input Styles */
+.card-input-wrapper {
+  position: relative;
+}
+
+.card-input {
+  padding-right: 120px !important;
+  background-color: #f8f9fa;
+  cursor: not-allowed;
+  color: #495057;
+}
+
+.card-brand-icons {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  width: 80px;
+  justify-content: flex-end;
+}
+
+.card-brand-icon {
+  height: 20px;
+}
+
+.card-brand-icon.static {
+  opacity: 1;
+  position: static;
+}
+
+.card-brand-icon.rotating {
+  position: absolute;
+  right: 0;
+  animation: fadeInOut 2s infinite;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  20%, 80% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+}
+
+/* Submit Button */
+.submit-button {
+  width: 100%;
+  background: #6772e5;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 10px;
+}
+
+.submit-button:hover {
+  background: #5469d4;
+}
+
+.submit-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Payment Processing */
+.payment-result {
+  text-align: center;
+  padding: 30px;
+}
+
+.payment-result h3 {
+  color: #32325d;
+  margin-bottom: 10px;
+}
+
+.payment-result p {
+  color: #6b7c93;
+  margin-bottom: 5px;
+}
+
+.loading-spinner {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #6772e5;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Dialog Styles */
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.dialog-box {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+}
+
+.dialog-icon {
+  margin-bottom: 20px;
+}
+
+.success-icon {
+  color: #28a745;
+  font-size: 48px;
+}
+
+.error-icon {
+  color: #dc3545;
+  font-size: 48px;
+}
+
+.dialog-countdown {
+  color: #6b7c93;
+  font-size: 14px;
+  margin: 15px 0;
+}
+
+.dialog-button {
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+}
+
+.success-button {
+  background: #28a745;
+  color: white;
+}
+
+.error-button {
+  background: #dc3545;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 0 auto;
+}
+
+.error-message {
+  color: #dc3545;
+  margin-bottom: 15px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+  .stripe-container {
+    padding: 15px;
+  }
+  
+  .card {
+    padding: 20px;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .form-row .half {
+    width: 100%;
+  }
+  
+  .card-brand-icons {
+    right: 5px;
+    gap: 3px;
+    width: 70px;
+  }
+  
+  .card-brand-icon {
+    height: 16px;
+  }
+}
