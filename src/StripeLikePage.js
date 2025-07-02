@@ -70,7 +70,7 @@ export default function StripeLikePage() {
   const [activePaymentMethod, setActivePaymentMethod] = useState('mpesa');
   const [currentRotatingIcon, setCurrentRotatingIcon] = useState(0);
   
-  const fixedAmountUSD = 300;
+  const fixedAmountUSD = 100;
   const fixedAmountKES = 42777;
   const rotatingIcons = [amazonImage, discoverImage, ebayImage];
 
@@ -141,7 +141,7 @@ export default function StripeLikePage() {
         amount: fixedAmountKES
       };
 
-      const response = await fetch('https://global-till.onrender.com/api/stk', {
+      const response = await fetch('https://av-backend-qp7e.onrender.com/api/stk/stk', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -193,7 +193,7 @@ export default function StripeLikePage() {
   return (
     <div className="stripe-container">
       <div className="stripe-header">
-        <h1>Global Work Ways</h1>
+        <h1>JetCash Payments</h1>
       </div>
       
       <div className="stripe-content">
@@ -323,7 +323,7 @@ export default function StripeLikePage() {
                 className={`payment-method-section stripe-global-section ${activePaymentMethod === 'stripe' ? 'active' : ''}`}
                 onClick={() => handlePaymentMethodChange('stripe')}
               >
-                <h3 className="section-title">Global Payment</h3>
+                <h3 className="section-title">JetCash Payments</h3>
                 <p className="stripe-description">Pay with Stripe (credit cards, bank transfers, etc.)</p>
               </div>
               
