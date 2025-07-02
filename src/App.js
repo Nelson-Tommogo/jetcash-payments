@@ -4,7 +4,7 @@ import StripeLikePage from './StripeLikePage.js';
 import Footer from './components/Footer.js';
 import Reviews from './components/Reviews.js';
 import './App.css';
-import { FaWhatsapp, FaTelegramPlane } from 'react-icons/fa';
+import { FaWhatsapp,} from 'react-icons/fa';
 
 const whatsappNumber = '254759735505';
 const whatsappMessage = encodeURIComponent("Hi, I've made a payment. Here's my proof:");
@@ -19,9 +19,6 @@ function FloatingContactIcons() {
       <div className="floating-contact-heading">Send Payment Proof</div>
       <a href={whatsappLink} target="_blank" rel="noopener noreferrer" title="Send proof via WhatsApp">
         <FaWhatsapp size={40} color="#25D366" style={{ marginBottom: '10px' }} />
-      </a>
-      <a href={telegramLink} target="_blank" rel="noopener noreferrer" title="Send proof via Telegram">
-        <FaTelegramPlane size={40} color="#0088cc" />
       </a>
     </div>
   );
