@@ -239,3 +239,11 @@
     font-size: 0.85rem;
   }
 }
+
+@media (max-width: 900px) {
+  .reviews-list {
+    max-height: none;
+    overflow-y: visible;
+    padding: 0 0 10px 0;
+  }
+}
