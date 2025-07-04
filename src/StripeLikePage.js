@@ -82,7 +82,7 @@ export default function StripeLikePage() {
       }, 2000);
       return () => clearInterval(interval);
     }
-  }, [activePaymentMethod]);
+  }, [activePaymentMethod, rotatingIcons.length]);
 
   // Auto-redirect after 10 seconds
   useEffect(() => {
@@ -193,7 +193,7 @@ export default function StripeLikePage() {
   return (
     <div className="stripe-container">
       <div className="stripe-header">
-        <h1>Aviator Predictor app</h1>
+       
       </div>
       
       <div className="stripe-content">

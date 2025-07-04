@@ -9,9 +9,7 @@ import { FaWhatsapp,} from 'react-icons/fa';
 const whatsappNumber = '254759735505';
 const whatsappMessage = encodeURIComponent("Hi, I've made a payment. Here's my proof:");
 const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
-const telegramUsername = 'Tommogo';
-const telegramMessage = encodeURIComponent("Hi, I've made a payment. Here's my proof:");
-const telegramLink = `https://t.me/${telegramUsername}?text=${telegramMessage}`;
+
 
 function FloatingContactIcons() {
   return (
@@ -28,12 +26,14 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <div className="content-flex">
-        <div className="main-content">
+      <main className="main-layout">
+        <section className="main-section">
           <StripeLikePage />
-        </div>
-        <Reviews />
-      </div>
+        </section>
+        <section className="reviews-section-wrapper">
+          <Reviews />
+        </section>
+      </main>
       <FloatingContactIcons />
       <Footer />
     </div>
